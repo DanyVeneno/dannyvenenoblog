@@ -9,12 +9,12 @@ export default {
   url: "https://www.facebook.com/juanitovenenoestudiodigital",
   social: {
     dribbble: false,
-    facebook: false,
-    github: "https://www.youtube.com/@juanitovenenoestudio",
-    instagram: false,
+    facebook: "https://www.youtube.com/@juanitovenenoestudio",
+    github: false,
+    instagram: "https://www.instagram.com/juanitovenenoestudio/",
     mastodon: false,
     pinterest: false,
     skype: false,
-    twitter: "https://www.instagram.com/juanitovenenoestudio/",
+    twitter: false,
   },
 };
