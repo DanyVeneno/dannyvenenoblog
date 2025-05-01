@@ -1,0 +1,478 @@
+---
+title: "Laguia definitiva de UX Research"
+pubDate: 2025-05-01
+intro: Para diseñar soluciones que resuelvan problemas reales, no asumidos. Es la base para tomar decisiones informadas, no basadas en opiniones o suposiciones
+tag: Diseño UI/UX
+author: dannyveneno
+image: ../../assets/guiauxui.webp
+---
+
+import { Image } from "astro:assets";
+import slide1 from "../../assets/guiauxui.webp";
+
+---
+
+# Manual Básico de UX Research: Crea Experiencias con Sentido
+
+---
+
+## ÍNDICE GENERAL
+
+1. [¿Qué demonios es UX Research y por qué importa?](#1-qué-demonios-es-ux-research-y-por-qué-importa)
+2. [Los 10 métodos más usados (y cuándo usarlos sin fallar)](#2-los-10-métodos-más-usados-y-cuándo-usarlos-sin-fallar)
+3. [Herramientas digitales para ejecutar tus investigaciones](#3-herramientas-digitales-para-ejecutar-tus-investigaciones)
+4. [El perfil ideal del UX Designer investigador](#4-el-perfil-ideal-del-ux-designer-investigador)
+5. [Cómo aplicar UX Research en un proyecto real (paso a paso)](#5-cómo-aplicar-ux-research-en-un-proyecto-real-paso-a-paso)
+6. [Errores mortales y cómo evitarlos](#6-errores-mortales-y-cómo-evitarlos)
+7. [Plantillas listas para usar](#7-plantillas-listas-para-usar)
+8. [Mini-glosario para no perderse entre tecnicismos](#8-mini-glosario-para-no-perderse-entre-tecnicismos)
+9. [Bonus: Frameworks ligeros que te salvan la vida (Lean UX, Design Thinking, etc.)](#9-bonus-frameworks-ligeros-que-te-salvan-la-vida-lean-ux-design-thinking-etc)
+10. [¿Y después de investigar, qué? Cómo integrar el UX Research al proceso de diseño](#10-y-después-de-investigar-qué-cómo-integrar-el-ux-research-al-proceso-de-diseño)  
+    **Annex: Frameworks, Plantillas y Herramientas por metodología**
+
+---
+
+# Manual Básico de UX Research: Crea Experiencias con Sentido
+
+---
+
+## 1. ¿Qué demonios es UX Research y por qué importa?
+
+**UX Research** (Investigación de Experiencia de Usuario) es el proceso de **entender a los usuarios** mediante métodos estructurados para diseñar soluciones que resuelvan problemas reales, no asumidos. Es la base para tomar decisiones informadas, no basadas en opiniones o suposiciones.
+
+### ¿Por qué importa?
+
+- **Evita suposiciones**: Diseña con datos, no con "creo que al usuario le gusta esto".
+- **Reduce riesgos**: Identifica errores antes de invertir en desarrollo.
+- **Mejora la retención**: Usuarios satisfechos regresan y recomiendan.
+- **Alinea equipos**: Todo el equipo habla el mismo idioma: el del usuario.
+
+### Ejemplo práctico:
+
+Si estás diseñando una app de pedidos de comida y descubres que los usuarios abandonan el proceso en el pago, el UX Research te ayuda a entender _por qué_:
+
+- ¿El formulario es demasiado largo?
+- ¿No hay opciones de pago locales?
+- ¿El botón de "Confirmar pedido" es confuso?
+
+---
+
+## 2. Los 10 métodos más usados (y cuándo usarlos sin fallar)
+
+Aquí los métodos más comunes en UX Research, con ejemplos de cuándo aplicarlos:
+
+1. **Entrevistas uno a uno**
+
+   - **Cuándo**: En fases iniciales para explorar necesidades.
+   - **Ejemplo**: "¿Qué frustra a los usuarios al usar tu app de onboarding?"
+
+2. **Encuestas (Surveys)**
+
+   - **Cuándo**: Validar hipótesis con datos cuantitativos.
+   - **Ejemplo**: "¿Qué porcentaje de usuarios abandonan el registro?"
+
+3. **Pruebas de usabilidad (Usability Testing)**
+
+   - **Cuándo**: Evaluar prototipos o productos existentes.
+   - **Ejemplo**: "¿Pueden los usuarios encontrar el botón de 'Contacto' en menos de 10 segundos?"
+
+4. **A/B Testing**
+
+   - **Cuándo**: Comparar dos versiones de un diseño.
+   - **Ejemplo**: "¿Qué diseño de botón genera más clics: rojo o verde?"
+
+5. **Análisis de datos (Analytics)**
+
+   - **Cuándo**: Complementar insights cualitativos.
+   - **Ejemplo**: "¿Dónde ocurren más abandono de sesión?"
+
+6. **Card Sorting**
+
+   - **Cuándo**: Diseñar o mejorar la arquitectura de información.
+   - **Ejemplo**: "¿Cómo clasificarían los usuarios las secciones de un sitio web?"
+
+7. **Diarios de usuario (Diary Studies)**
+
+   - **Cuándo**: Entender comportamientos a largo plazo.
+   - **Ejemplo**: "¿Cómo interactúan los usuarios con tu app durante una semana?"
+
+8. **Testing de campo (Field Studies)**
+
+   - **Cuándo**: Ver a los usuarios en su entorno natural.
+   - **Ejemplo**: "¿Cómo usan los chefs tu app de gestión de inventario en una cocina?"
+
+9. **Heurísticas de Nielsen**
+
+   - **Cuándo**: Evaluar la usabilidad de un producto sin usuarios.
+   - **Ejemplo**: "¿Tu app cumple con principios básicos de usabilidad?"
+
+10. **Mapas de viaje del usuario (User Journey Maps)**
+    - **Cuándo**: Visualizar la experiencia completa del usuario.
+    - **Ejemplo**: "¿Qué emociones sienten los usuarios al registrarse en tu plataforma?"
+
+---
+
+## 3. Herramientas digitales para ejecutar tus investigaciones
+
+### **3.1. Para recolección de datos**
+
+- **Typeform / Google Forms**: Encuestas simples y atractivas.
+- **Lookback**: Testing moderado en vivo con usuarios reales.
+- **Hotjar / FullStory**: Grabaciones de sesiones y mapas de calor.
+
+### **3.2. Para análisis y síntesis**
+
+- **Miro / FigJam**: Mapear insights y colaborar en workshops.
+- **Otter.ai**: Transcripción automática de entrevistas.
+- **Airtable**: Organizar hallazgos en bases de datos visuales.
+
+### **3.3. Para prototipado y testing**
+
+- **Figma**: Diseñar y testear prototipos interactivos.
+- **Maze**: Pruebas de usabilidad automatizadas.
+- **InVision**: Compartir prototipos con stakeholders.
+
+### **3.4. Para documentación**
+
+- **Notion**: Centralizar informes, plantillas y hallazgos.
+- **Zeroheight**: Documentar sistemas de diseño.
+- **Confluence**: Compartir guías de estilo y decisiones de diseño.
+
+---
+
+## 4. El perfil ideal del UX Designer investigador
+
+Un buen UX Designer investigador combina **habilidades blandas** y **técnicas**. Aquí las claves:
+
+### **4.1. Habilidades blandas**
+
+- **Empatía**: Ponerse en el lugar del usuario.
+- **Curiosidad**: No conformarse con respuestas superficiales.
+- **Comunicación**: Transmitir hallazgos de forma clara y persuasiva.
+
+### **4.2. Habilidades técnicas**
+
+- **Conocimiento de métodos**: Saber cuándo usar cada técnica.
+- **Análisis de datos**: Interpretar métricas y patrones.
+- **Prototipado**: Crear pruebas rápidas para validar ideas.
+
+### **4.3. Actitudes clave**
+
+- **Humildad**: Aceptar que tus ideas pueden estar equivocadas.
+- **Colaboración**: Trabajar con desarrolladores, PMs y stakeholders.
+- **Resiliencia**: Aprender de errores y seguir iterando.
+
+---
+
+## 5. Cómo aplicar UX Research en un proyecto real (paso a paso)
+
+### **5.1. Fase 1: Descubrimiento**
+
+- **Definir el problema**: ¿Qué queremos resolver?
+- **Revisar datos existentes**: Analytics, encuestas anteriores, feedback de clientes.
+- **Crear hipótesis**: Ejemplo: "Los usuarios abandonan el registro por un formulario demasiado largo".
+
+### **5.2. Fase 2: Planificación**
+
+- **Seleccionar métodos**: ¿Entrevistas? ¿Pruebas de usabilidad?
+- **Reclutar participantes**: Usar herramientas como UserInterviews o Respondent.
+- **Preparar materiales**: Guiones, prototipos, consentimientos informados.
+
+### **5.3. Fase 3: Ejecución**
+
+- **Realizar entrevistas o tests**: Grabar sesiones para revisar después.
+- **Registrar hallazgos**: Usar plantillas del capítulo 7.
+
+### **5.4. Fase 4: Análisis**
+
+- **Agrupar insights**: Técnica de affinity mapping.
+- **Priorizar problemas**: Usar matrix de impacto vs. esfuerzo.
+
+### **5.5. Fase 5: Implementación**
+
+- **Traducir hallazgos en diseños**: Ejemplo: Simplificar el formulario de registro.
+- **Testear cambios**: Validar con usuarios antes de lanzar.
+
+---
+
+## Próximos pasos sugeridos
+
+- **Personaliza las plantillas**: Adapta cada framework a tu proyecto o equipo.
+- **Combina metodologías**: Usa lo mejor de cada una según la fase del proyecto.
+- **Automatiza con herramientas**: Aprovecha integraciones entre apps (ej: Figma + Maze + Notion).
+
+---
+
+## 6. Errores mortales y cómo evitarlos
+
+Cometer errores en UX Research no solo es común, es inevitable. Pero los errores _graves_ pueden costarte tiempo, dinero y credibilidad. Aquí los más frecuentes (y cómo esquivarlos con estilo):
+
+- **Investigar sin objetivo claro**: Si no sabes qué estás buscando, cualquier dato te parecerá útil. Solución: Define hipótesis e indicadores desde el inicio.
+- **Elegir el método incorrecto**: No todo se resuelve con encuestas. El método debe responder al objetivo, no al revés.
+- **Entrevistar mal (o poco)**: Preguntas cerradas, interrumpir, no grabar... todo suma al desastre. Solución: Prepárate, practica, escucha.
+- **Análisis superficial**: Sacar conclusiones rápidas sin explorar causas o patrones es como leer solo la portada de un libro. Ve más allá de lo obvio.
+- **No documentar bien**: Si no registras, olvidas. Si no organizas, nadie entiende. La investigación debe ser trazable y clara.
+- **No compartir con el equipo**: Investigación guardada es investigación muerta. Hazla circular. Hazla viva.
+- **Hacer research por cumplir**: No lo uses solo para justificar decisiones ya tomadas. El UX Research es brújula, no excusa.
+
+---
+
+## 7. Plantillas listas para usar
+
+¿Te da flojera empezar desde cero? Aquí tienes algunos formatos que puedes copiar y adaptar:
+
+### **Guion de entrevista**
+
+- Objetivo de la entrevista
+- Preguntas clave (máx. 10)
+- Preguntas de cierre / reflexión
+- Espacio para observaciones no verbales
+
+### **Checklist de prueba de usabilidad**
+
+- Hipótesis
+- Flujo a evaluar
+- Tareas a completar por el usuario
+- Indicadores de éxito / error
+- Espacio para comentarios post-test
+
+### **Resumen ejecutivo de hallazgos**
+
+- Contexto
+- Hallazgos clave (top 5)
+- Insights accionables
+- Recomendaciones de diseño
+- Próximos pasos
+
+### **Mapa de empatía (simplificado)**
+
+- ¿Qué ve? / ¿Qué oye?
+- ¿Qué piensa y siente?
+- ¿Qué dice y hace?
+- Frustraciones / motivaciones
+
+---
+
+## 8. Mini-glosario para no perderse entre tecnicismos
+
+- **Insight**: Hallazgo profundo que revela una necesidad, motivación o frustración real del usuario.
+- **Persona**: Representación ficticia de un usuario tipo, basada en datos reales.
+- **Pain point**: Punto de dolor o problema en la experiencia del usuario.
+- **Wireframe**: Boceto funcional de una interfaz, sin diseño visual.
+- **Prototipo**: Versión simulada de una interfaz que permite testear interacción.
+- **Stakeholder**: Persona clave con poder de decisión o interés en el proyecto.
+- **Journey map**: Mapa que representa las etapas del viaje del usuario, con sus emociones y puntos de contacto.
+- **Affinity map**: Técnica para agrupar ideas o hallazgos en patrones o temas comunes.
+
+---
+
+## 9. Bonus: Frameworks ligeros que te salvan la vida (Lean UX, Design Thinking, etc.)
+
+A veces no necesitas reinventar la rueda, solo usar un buen marco de trabajo. Estos frameworks te ayudan a integrar el research al flujo de trabajo sin morir en el intento:
+
+- **Lean UX**: Investigación rápida, colaborativa y centrada en generar aprendizajes continuos. Ideal para equipos ágiles.
+- **Design Thinking**: Enfocado en empatizar, definir, idear, prototipar y testear. Un clásico que nunca falla.
+- **Double Diamond**: Visualiza el proceso en dos grandes fases: descubrir/definir y desarrollar/entregar.
+- **Jobs to be Done (JTBD)**: Entiende a los usuarios por el “trabajo” que están tratando de lograr, no solo por sus características demográficas.
+- **Sprint de Google**: Una semana para resolver un reto de diseño, desde el problema hasta el testeo con usuarios.
+
+Úsalos como guía, no como dogma. Lo importante es resolver problemas reales con soluciones útiles.
+
+---
+
+## 10. ¿Y después de investigar, qué? Cómo integrar el UX Research al proceso de diseño
+
+Después de completar el proceso de investigación, es crucial integrar los hallazgos dentro del proceso de diseño de manera efectiva. Aquí es donde se conecta la teoría con la práctica. A continuación, te detallo cómo llevar esa valiosa información al trabajo real de diseño:
+
+### **10.1. Traduce cada insight en una acción de diseño**
+
+Cada descubrimiento obtenido durante la investigación debe convertirse en un cambio tangible en el diseño. No se trata solo de entender un problema, sino de saber cómo modificar la interfaz o la experiencia para resolverlo. Por ejemplo:
+
+- Si un usuario no entiende cómo funciona un botón, cambia su texto, posición o diseño visual.
+- Si hay frustración al navegar por un menú, reorganiza su estructura o simplifica las opciones.
+
+### **10.2. Usa los datos para priorizar funcionalidades**
+
+Los hallazgos de la investigación te ayudarán a tomar decisiones informadas sobre qué funcionalidades deben tener mayor prioridad. Si un patrón recurrente muestra que los usuarios necesitan una característica específica para navegar mejor, esa debería ser la siguiente funcionalidad que se diseñe o mejore. Herramientas como **Matrices de Priorización** (ver capítulo 7) pueden ayudarte a ordenar estas decisiones.
+
+### **10.3. Crea _user personas_ o mapas de empatía si no los tienes**
+
+Las personas (_user personas_) y los mapas de empatía son herramientas visuales que ayudan a entender mejor a los usuarios. Si no las has creado aún, este es el momento perfecto para hacerlo. Integra los _insights_ en estas herramientas para:
+
+- Visualizar las motivaciones y frustraciones de los usuarios.
+- Comunicar hallazgos al equipo de forma clara y visual.
+- Guíate por la plantilla del capítulo 7 para construir mapas de empatía simplificados.
+
+### **10.4. Involucra al equipo de diseño y desarrollo desde el principio**
+
+El UX Research no es solo tarea de los diseñadores. Asegúrate de que los desarrolladores, gerentes de producto y otros miembros del equipo estén al tanto de los hallazgos desde el principio. La colaboración temprana hace que la integración de los _insights_ sea más fluida y efectiva. Ejemplos:
+
+- Comparte resúmenes ejecutivos de hallazgos (ver capítulo 7) en reuniones de inicio de proyecto.
+- Invita a desarrolladores a sesiones de pruebas de usabilidad para que escuchen directamente a los usuarios.
+
+### **10.5. No pierdas la continuidad: testea después de implementar**
+
+La investigación no termina una vez que se implementan los cambios. Es importante seguir iterando. Realiza pruebas de usabilidad después de cada modificación para asegurarte de que los cambios realizados realmente resuelvan los problemas. Recuerda:
+
+- **Lean UX** (capítulo 9) enfatiza ciclos rápidos de prototipado y testeo.
+- **Design Thinking** también promueve la iteración constante basada en feedback.
+
+La investigación es un proceso continuo, y cada ciclo te acercará más a la experiencia perfecta para el usuario.
+
+![image](https://res.cloudinary.com/dj0dedvu0/image/upload/v1746080234/Leonardo_Phoenix_A_sleek_spider_monkey_with_a_confident_expres_3_olsd0j.jpg)
+
+---
+
+## **Annex: Frameworks, Plantillas y Herramientas por Metodología**
+
+🧠 **1. Design Thinking**  
+**Plantillas:**
+
+- Mapa de empatía
+- Persona canvas
+- HMW ("How Might We") questions
+- Mapa de viaje del usuario (User Journey)
+- Ideación SCAMPER / Crazy 8’s
+- Prototipo de baja fidelidad
+
+**Herramientas:**
+
+- **Miro / FigJam**: Workshops y pizarras colaborativas
+- **Marvel / Figma**: Prototipado rápido
+- **Typeform / Google Forms**: Investigación
+
+🎯 **2. Double Diamond**  
+**Plantillas:**
+
+- Brief de proyecto
+- Mapa de descubrimiento (insights, stakeholders)
+- Priorización MoSCoW
+- Roadmap de soluciones
+- Testing feedback sheet
+
+**Herramientas:**
+
+- **Mural / Lucidspark**: Mapas visuales
+- **Notion / Airtable**: Documentación estructurada
+- **Optimal Workshop**: Testing e investigación
+
+🔁 **3. UX / UCD (User-Centered Design)**  
+**Plantillas:**
+
+- Mapa de experiencia
+- Wireframes
+- Diagrama de flujo (User Flow)
+- Usability Test Script
+- Informe de hallazgos
+
+**Herramientas:**
+
+- **Figma / Adobe XD**: Diseño de interfaces
+- **Maze / Useberry**: Testeo de prototipos
+- **Hotjar / FullStory**: Grabación y análisis de uso real
+
+⚡ **4. Design Sprint**  
+**Plantillas:**
+
+- Sprint Planning Board (día a día)
+- User Journey simplificada
+- Storyboard
+- Mapa de votación
+- Guía de entrevista de usuario
+
+**Herramientas:**
+
+- **Google Workspace**: Colaboración en vivo
+- **Figma / InVision**: Prototipado rápido
+- **Lookback / Zoom**: Testing moderado
+
+⚙️ **5. Lean UX**  
+**Plantillas:**
+
+- Canvas de hipótesis
+- Mapa de experimentos
+- MVP checklist
+- Matriz de aprendizaje (Learn → Build → Measure)
+
+**Herramientas:**
+
+- **Trello / JIRA**: Seguimiento ágil
+- **Mixpanel / Google Analytics**: Validación con datos
+- **Productboard / Canny**: Feedback del cliente
+
+🧬 **6. Human-Centered Design**  
+**Plantillas:**
+
+- Cuaderno de campo (notas de entrevistas)
+- Plantilla de co-creación (workshops)
+- Blueprint de servicio
+- Árbol de soluciones
+
+**Herramientas:**
+
+- **IDEO.org Design Kit**: Gratis y completo
+- **Canva**: Presentar resultados visuales
+- **Otter.ai**: Transcripción de entrevistas
+
+🧩 **7. Atomic Design**  
+**Plantillas:**
+
+- Guía de estilo (colores, tipografías, espaciados)
+- Sistema de componentes (atoms → pages)
+- UI Kit en Figma
+
+**Herramientas:**
+
+- **Storybook**: Documentación de componentes
+- **Figma / Framer**: Prototipado vivo
+- **Zeroheight**: Sistemas de diseño documentados
+
+🛠️ **8. Agile Design**  
+**Plantillas:**
+
+- Sprint Backlog
+- DoD (Definition of Done)
+- Daily Standup Board
+- Retrospectiva Ágil
+
+**Herramientas:**
+
+- **JIRA / ClickUp / Asana**: Tareas ágiles
+- **Slack / Discord**: Comunicación rápida
+- **Figma + FigJam**: Prototipo y feedback en vivo
+
+🌀 **9. Service Design**  
+**Plantillas:**
+
+- Blueprint de servicio
+- Stakeholder Map
+- Touchpoint Map
+- Customer Journey con backstage y frontstage
+
+**Herramientas:**
+
+- **Smaply / Miro**: Mapas complejos
+- **UXPressia**: Generación automática de journeys
+- **Notion**: Organización documental
+
+✍️ **10. Visual Thinking**  
+**Plantillas:**
+
+- Lienzo de ideas (Idea Napkin)
+- Sketchnotes
+- Mapa mental
+- Lienzo visual de resumen
+
+**Herramientas:**
+
+- **Excalidraw / Milanote**: Dibujo libre digital
+- **Procreate / Concepts App**: Tablet ilustración
+- **Paper by WeTransfer**: Visualización rápida
+
+---
+
+## **Próximos pasos sugeridos**
+
+- **Personaliza las plantillas**: Adapta cada framework a tu proyecto o equipo.
+- **Combina metodologías**: Usa lo mejor de cada una según la fase del proyecto.
+- **Automatiza con herramientas**: Aprovecha integraciones entre apps (ej: Figma + Maze + Notion).
