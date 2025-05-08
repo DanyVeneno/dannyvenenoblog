@@ -9,9 +9,9 @@ export default {
   url: "https://www.facebook.com/juanitovenenoestudiodigital",
   social: {
     dribbble: false,
-    facebook: "https://www.youtube.com/@juanitovenenoestudio",
+    facebook: "https://www.facebook.com/juanitovenenoestudiodigital",
     github: false,
-    instagram: "https://www.instagram.com/juanitovenenoestudio/",
+    instagram: "https://www.instagram.com/yehiibhiiestudio/",
     mastodon: false,
     pinterest: false,
     skype: false,
