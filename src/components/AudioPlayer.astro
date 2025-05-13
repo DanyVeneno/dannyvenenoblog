@@ -1,0 +1,48 @@
+---
+// Recibe props
+const { src, title = "Audio player", className = "" } = Astro.props;
+---
+
+<div class={`audio-player ${className}`}>
+  <p class='audio-title'>{title}</p>
+  <audio controls>
+    <source src={src} type='audio/mpeg' />
+    Tu navegador no soporta audio.
+  </audio>
+</div>
+
+<style>
+  .audio-player {
+    background: #1a1a1a;
+    color: #00ffaa;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0, 255, 170, 0.3);
+    font-family: "Inter", sans-serif;
+    max-width: 600px;
+    margin: 2rem auto;
+    animation: neonPulse 2.5s infinite ease-in-out;
+  }
+
+  .audio-title {
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+  }
+
+  audio {
+    width: 100%;
+  }
+
+  @keyframes neonPulse {
+    0% {
+      box-shadow: 0 0 10px rgba(0, 255, 170, 0.3);
+    }
+    50% {
+      box-shadow: 0 0 25px rgba(0, 255, 170, 0.8);
+    }
+    100% {
+      box-shadow: 0 0 10px rgba(0, 255, 170, 0.3);
+    }
+  }
+</style>
