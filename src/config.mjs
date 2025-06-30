@@ -1,6 +1,6 @@
 export default {
   title: "Danny Veneno",
-  titleSuffix: " | Blog",
+  titleSuffix: " | Yehiibhii Estudio",
   description:
     "El conocimiento nace a partir de los sentidos y se desarrolla a través de la razón",
   defaultOgImage: "./defaultog.jpg",
