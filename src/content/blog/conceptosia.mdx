@@ -1,0 +1,387 @@
+---
+title: Conceptos de IA 2026
+pubDate: 2026-11-03
+intro: Exploramos diferentes conceptos que en 2026 se esta´n utilizando para el desarrollo de herramientas de productividad empresarial.
+tag: Inteligencia Artificial
+author: dannyveneno
+image: ../../assets/glosario.webp
+---
+
+import AudioPlayer from "../../components/AudioPlayer.astro";
+import { Image } from "astro:assets";
+
+import slide1 from "../../assets/glosario.webp";
+
+---
+
+<AudioPlayer
+  src='https://res.cloudinary.com/dj0dedvu0/video/upload/v1791069674/C%C3%B3mo_integrar_RAG__agentes_y_MCP_pk7qiq.mp4'
+  title='Diseño y conceptos de estructuras con desarrollo de herramientas con ia integrada'
+/>
+
+---
+
+# MCP, RAG, VPS y agentes de IA: qué son y cómo trabajan juntos
+
+La inteligencia artificial está cambiando la manera en que diseñamos, desarrollamos software y organizamos el trabajo. Sin embargo, entender su ecosistema puede sentirse como entrar a una conversación donde todos hablan en siglas: MCP, RAG, LLM, CLI…
+
+Cada concepto cumple una función diferente. Algunos son modelos, otros son técnicas, protocolos, herramientas o infraestructura. Conocer esas diferencias nos permite construir soluciones útiles y elegir tecnología con criterio.
+
+En esta guía explicaremos qué son, qué hacen y para qué sirven, con ejemplos relacionados con el desarrollo web.
+
+> **Aclaración:** utilizaremos **vibe coding**, que probablemente sea el término al que te refieres con “vide coding”. Interpretaremos **Amp** como la herramienta de programación con IA de ampcode.com. Para **Hermes**, distinguiremos entre Hermes Agent y la familia de modelos de Nous Research.
+
+## LLM: el modelo que procesa y genera lenguaje
+
+**LLM** significa _Large Language Model_, o **modelo de lenguaje de gran tamaño**.
+
+Es un modelo entrenado con grandes cantidades de datos que aprende patrones y relaciones del lenguaje para generar respuestas a partir de instrucciones y contexto.
+
+### ¿Qué hace?
+
+Puede realizar tareas como:
+
+- Redactar y resumir textos.
+- Traducir contenido.
+- Analizar información.
+- Clasificar solicitudes.
+- Explicar conceptos.
+- Generar y revisar código.
+
+Algunos modelos también procesan imágenes u otras modalidades, dependiendo de sus capacidades.
+
+### ¿Para qué sirve?
+
+Para transformar instrucciones e información en resultados: un artículo, una explicación, una propuesta de código o un análisis.
+
+**Ejemplo:** le proporcionas el brief de una empresa y te ayuda a organizar el contenido de una landing page.
+
+El modelo no tiene acceso garantizado a internet, a los archivos de tu empresa o a información actualizada. Esos accesos dependen de las herramientas y conexiones de la aplicación.
+
+Además, puede generar información incorrecta con una redacción convincente. Sonar seguro no equivale a tener razón.
+
+**Referencia:** [Google Cloud — Large language models](https://cloud.google.com/ai/llms).
+
+## RAG: recuperar información para responder con contexto
+
+**RAG** significa _Retrieval-Augmented Generation_, o **generación aumentada por recuperación**.
+
+Es una técnica que combina la búsqueda de información con la generación de respuestas de un modelo.
+
+### ¿Qué hace?
+
+Un sistema RAG suele seguir este proceso:
+
+1. Recibe una pregunta.
+2. Busca información relevante en una fuente.
+3. Recupera los documentos o fragmentos pertinentes.
+4. Los incorpora al contexto del modelo.
+5. Genera una respuesta apoyándose en ese contenido.
+
+### ¿Para qué sirve?
+
+Para crear asistentes que consulten información específica, como:
+
+- Manuales de operación.
+- Catálogos.
+- Políticas internas.
+- Documentación técnica.
+- Artículos de un blog.
+- Materiales de cursos.
+
+**Ejemplo:** un visitante pregunta qué incluye un servicio. El sistema recupera información del catálogo y genera una explicación basada en esos documentos.
+
+RAG generalmente permite actualizar la fuente y su índice sin reentrenar el modelo. Sin embargo, no elimina todos los errores: una recuperación incompleta o desactualizada puede producir una respuesta equivocada.
+
+Mostrar fuentes y evaluar las respuestas ayuda a detectar estos problemas.
+
+**Referencia:** [AWS — Understanding Retrieval Augmented Generation](https://docs.aws.amazon.com/prescriptive-guidance/latest/retrieval-augmented-generation-options/what-is-rag.html).
+
+## MCP: un protocolo para conectar la IA con herramientas
+
+**MCP** significa _Model Context Protocol_.
+
+Es un estándar abierto que permite a aplicaciones de IA conectarse con herramientas y fuentes de información mediante una interfaz común.
+
+### ¿Qué hace?
+
+Una aplicación compatible puede comunicarse con servidores MCP que exponen capacidades como:
+
+- Herramientas ejecutables.
+- Recursos de información.
+- Plantillas de instrucciones o prompts.
+
+### ¿Para qué sirve?
+
+Para facilitar integraciones entre aplicaciones de IA y sistemas externos.
+
+**Ejemplo:** un agente consulta un catálogo o revisa el estado de una tarea mediante un servidor MCP que ofrece esas operaciones.
+
+Podemos imaginar MCP como un conector estandarizado. Facilita la comunicación, pero las funciones disponibles dependen de cada servidor y de los permisos concedidos.
+
+### ¿En qué se diferencia de RAG?
+
+**MCP conecta capacidades. RAG recupera información para apoyar una respuesta.**
+
+Pueden trabajar juntos: una herramienta conectada mediante MCP podría recuperar documentos que después se utilizan dentro de un proceso RAG.
+
+**Referencia:** [Model Context Protocol — Introducción](https://modelcontextprotocol.io/docs/getting-started/intro).
+
+## VPS: infraestructura para ejecutar aplicaciones
+
+**VPS** significa _Virtual Private Server_, o **servidor virtual privado**.
+
+Es un entorno de servidor creado mediante virtualización, con recursos asignados y capacidad para instalar y administrar software.
+
+### ¿Qué hace?
+
+Puede ejecutar:
+
+- Aplicaciones web.
+- Backends.
+- Bases de datos.
+- Automatizaciones.
+- Agentes de IA.
+- Servidores MCP.
+
+### ¿Para qué sirve?
+
+Para mantener servicios funcionando sin depender de que tu computadora personal permanezca encendida.
+
+**Ejemplo:** una web se comunica con un backend alojado en un VPS. Ese backend consulta documentos y solicita respuestas a un modelo mediante una API.
+
+Un VPS no es una tecnología de IA y tampoco es obligatorio para incorporar IA a una aplicación. Existen alternativas administradas y serverless.
+
+Además, ejecutar un agente en un VPS no significa ejecutar allí el modelo. El LLM puede estar alojado en otro proveedor. Para ejecutar modelos localmente hay que evaluar memoria, procesamiento y, según el caso, GPU.
+
+**Referencia:** [AWS — Qué es un VPS](https://aws.amazon.com/es/what-is/vps/).
+
+## Vibe coding: construir software conversando con IA
+
+**Vibe coding** es una expresión popularizada por Andrej Karpathy para describir una forma de crear software delegando gran parte de la implementación a la IA y guiándola mediante lenguaje natural.
+
+En su sentido original, implica aceptar y probar resultados sin revisar a fondo el código generado. En el uso cotidiano, también se utiliza de forma más amplia para hablar de programación conversacional.
+
+### ¿Qué hace?
+
+Convierte instrucciones como esta en una implementación:
+
+> Crea una página con tarjetas, filtros, animaciones suaves y un botón para cambiar entre modo claro y oscuro.
+
+Después puedes probar el resultado y solicitar ajustes.
+
+### ¿Para qué sirve?
+
+Para explorar ideas, construir prototipos y experimentar con interfaces.
+
+**Ejemplo:** describes una plataforma de cursos, pruebas la navegación y pides cambios a partir de lo que observas.
+
+Para llevar ese prototipo a producción hacen falta revisión, pruebas, seguridad, accesibilidad y mantenimiento.
+
+Cuando utilizas IA mientras comprendes y verificas el código, hablamos con mayor precisión de **desarrollo asistido por IA**.
+
+La conversación acelera la construcción; el criterio técnico sostiene el resultado.
+
+**Referencia original:** [Andrej Karpathy — Vibe coding](https://x.com/karpathy/status/1886192184808149383).
+
+## CLI: trabajar mediante comandos
+
+**CLI** significa _Command-Line Interface_, o **interfaz de línea de comandos**.
+
+Permite interactuar con un programa escribiendo instrucciones en una terminal.
+
+### ¿Qué hace?
+
+Ofrece comandos para realizar tareas como:
+
+- Instalar dependencias.
+- Compilar aplicaciones.
+- Ejecutar pruebas.
+- Consultar archivos.
+- Iniciar herramientas.
+- Ejecutar agentes de IA.
+
+### ¿Para qué sirve en inteligencia artificial?
+
+Para utilizar herramientas de IA desde una terminal e integrarlas en scripts y procesos de desarrollo.
+
+**Ejemplo:** ejecutas una herramienta de IA para analizar un proyecto y después utilizas comandos para probar y compilar la aplicación.
+
+La **terminal** es el entorno donde escribes. La **CLI** es la interfaz del programa que utilizas allí. Ninguna implica inteligencia artificial por sí misma.
+
+## Agente de IA: un sistema que coordina acciones
+
+Un **agente de IA** combina un modelo con herramientas, instrucciones y un mecanismo de ejecución para avanzar hacia un objetivo.
+
+Puede elegir una acción, observar su resultado y decidir el siguiente paso dentro de los límites definidos.
+
+### ¿Qué hace?
+
+Puede coordinar acciones como:
+
+- Buscar información.
+- Consultar documentos.
+- Inspeccionar archivos.
+- Modificar código.
+- Ejecutar pruebas.
+- Revisar resultados.
+
+### ¿Para qué sirve?
+
+Para tareas que requieren varios pasos y adaptación.
+
+**Ejemplo:** le pides revisar un formulario. El agente inspecciona su implementación, propone cambios, los aplica si tiene permiso y ejecuta las comprobaciones disponibles.
+
+Su autonomía depende del producto y de la configuración. Un proceso automatizado puede seguir una secuencia fija; un agente puede elegir parte de su recorrido.
+
+Tener un objetivo no garantiza un resultado correcto. También necesita límites, criterios de finalización y evaluación.
+
+**Referencia:** [Anthropic — Building effective agents](https://www.anthropic.com/engineering/building-effective-agents).
+
+## Skills: procedimientos reutilizables para agentes
+
+Las **skills**, o habilidades, son paquetes de instrucciones y recursos que orientan a un agente para realizar tareas específicas.
+
+En el formato abierto **Agent Skills**, una skill contiene un archivo `SKILL.md` y puede incluir scripts, referencias y plantillas.
+
+### ¿Qué hacen?
+
+Describen:
+
+- Cuándo utilizar un procedimiento.
+- Qué pasos seguir.
+- Qué recursos consultar.
+- Qué criterios aplicar.
+- Cómo comprobar el resultado.
+
+### ¿Para qué sirven?
+
+Para repetir procesos con mayor consistencia.
+
+**Ejemplo:** una skill editorial describe el tono de una marca, la estructura de sus artículos y las verificaciones necesarias antes de entregar un texto.
+
+También puede haber skills para revisar accesibilidad, analizar datos o generar documentos.
+
+Una skill no reentrena automáticamente el modelo ni garantiza que siga todas las instrucciones. Su utilidad depende de su contenido y del soporte de la herramienta.
+
+### ¿Cómo se relacionan con MCP?
+
+Una skill puede explicar **cómo realizar una tarea**. MCP puede facilitar **el acceso a las herramientas necesarias**.
+
+**Referencia:** [Agent Skills — Overview](https://agentskills.io/home).
+
+## Amp: una herramienta de programación con IA
+
+**Amp** es un agente de programación y entorno de desarrollo.
+
+Es un producto concreto. Su documentación describe el uso de distintos modelos y el trabajo desde interfaces como la web y la CLI.
+
+### ¿Qué hace?
+
+Permite delegar tareas de desarrollo al agente dentro de un entorno preparado para trabajar con el proyecto.
+
+### ¿Para qué sirve?
+
+Para apoyar la implementación y revisión de cambios en software.
+
+**Ejemplo:** pedirle que trabaje en una mejora de interfaz, revisar los cambios y comprobar su comportamiento antes de integrarlos.
+
+Sus funciones y condiciones pueden cambiar, por lo que conviene consultar su documentación al utilizarlo.
+
+> En desarrollo web, AMP también puede significar _Accelerated Mobile Pages_. Es un proyecto diferente. Aquí hablamos de Amp como herramienta de programación con IA.
+
+**Referencia:** [Amp — Documentación](https://ampcode.com/docs).
+
+## Hermes: distinguir el agente de los modelos
+
+Dentro del ecosistema de Nous Research, **Hermes Agent** y los **modelos Hermes** representan componentes diferentes.
+
+### Hermes Agent
+
+Es un agente de IA de código abierto con herramientas, memoria persistente, skills e integración MCP.
+
+Su documentación contempla distintos entornos de ejecución e interfaces de interacción.
+
+**¿Para qué sirve?** Para construir un asistente que realice tareas y reutilice información o procedimientos entre sesiones.
+
+**Ejemplo:** organizar una investigación y conservar un procedimiento reutilizable para trabajos similares.
+
+Su capacidad para crear y mejorar skills no debe confundirse con reentrenar continuamente los parámetros del modelo.
+
+**Referencia:** [Hermes Agent — Documentación](https://hermes-agent.nousresearch.com/docs/).
+
+### Modelos Hermes
+
+Son una familia de modelos de lenguaje publicada por Nous Research.
+
+Los modelos constituyen la capa que procesa y genera lenguaje. Hermes Agent organiza herramientas y acciones, y puede trabajar con distintos proveedores.
+
+**¿Para qué sirven?** Para generar y procesar lenguaje dentro de aplicaciones compatibles.
+
+Las capacidades, licencias y requisitos de ejecución deben revisarse en la ficha de cada modelo.
+
+**Referencia:** [Nous Research — Ficha de un modelo Hermes](https://huggingface.co/NousResearch/Hermes-4-70B-FP8).
+
+## Otros conceptos que completan el mapa
+
+| Concepto                    | Qué es y para qué sirve                                                                                                             |
+| --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| **API**                     | Una interfaz que permite a una aplicación utilizar funciones de otra, como solicitar una respuesta a un modelo.                     |
+| **Prompt**                  | Una entrada que orienta al modelo. Puede incluir instrucciones, contexto, restricciones y formato esperado.                         |
+| **Ingeniería de contexto**  | Organización de la información disponible para el modelo: instrucciones, documentos, historial y resultados de herramientas.        |
+| **Tokens**                  | Unidades en las que el modelo representa contenido. Influyen en los límites de contexto y, según el proveedor, en el costo.         |
+| **Embeddings**              | Representaciones numéricas del contenido que permiten comparar similitudes. Son frecuentes en búsquedas semánticas.                 |
+| **Base de datos vectorial** | Un sistema para almacenar y buscar vectores. Puede formar parte de RAG, aunque RAG también puede usar búsqueda textual o híbrida.   |
+| **Tool calling**            | Un mecanismo por el cual el modelo solicita utilizar una herramienta. El software valida y ejecuta la solicitud según sus permisos. |
+| **Memoria**                 | Información guardada para recuperarla después. Es distinta del contexto inmediato y del entrenamiento del modelo.                   |
+| **Fine-tuning**             | Entrenamiento adicional que ajusta parámetros del modelo para tareas o comportamientos específicos.                                 |
+| **Workflow**                | Un flujo de trabajo que organiza pasos para completar un proceso.                                                                   |
+| **Orquestación**            | Coordinación de modelos, herramientas y decisiones dentro de un sistema.                                                            |
+| **Evaluaciones**            | Pruebas para medir la calidad y detectar errores.                                                                                   |
+| **Observabilidad**          | Registros y mediciones para revisar el funcionamiento, la latencia, el uso de herramientas y los costos.                            |
+
+## Cómo pueden trabajar juntos en una web
+
+Imaginemos una plataforma de consultoría con artículos, cursos y un asistente para visitantes.
+
+Una arquitectura posible sería:
+
+1. **La interfaz web** recibe la pregunta.
+2. **El backend** verifica la sesión y los permisos.
+3. **RAG** recupera contenido relevante de los materiales autorizados.
+4. **El LLM** genera una respuesta con ese contexto.
+5. **Un agente**, si hace falta, coordina acciones adicionales.
+6. **Las skills** aportan procedimientos especializados.
+7. **MCP** facilita el acceso a herramientas compatibles.
+8. **Un VPS o servicio administrado** mantiene los componentes funcionando.
+
+Amp o Hermes Agent podrían apoyar el desarrollo o determinados procesos, dependiendo de la configuración.
+
+Esta arquitectura es ilustrativa. No necesitas instalar todas las herramientas ni incorporar todos los conceptos en cada proyecto.
+
+Las credenciales privadas se gestionan en el backend. Los permisos deben aplicarse tanto al consultar documentos como al ejecutar acciones.
+
+## Qué utilizar según la necesidad
+
+| Necesidad                                  | Componentes que conviene evaluar                           |
+| ------------------------------------------ | ---------------------------------------------------------- |
+| Redactar o resumir contenido               | Un LLM con instrucciones y contexto adecuados.             |
+| Responder sobre documentación propia       | RAG, fuentes actualizadas y comprobación de respuestas.    |
+| Acceder a herramientas externas            | APIs o MCP, según las integraciones disponibles.           |
+| Coordinar tareas variables de varios pasos | Un agente con herramientas y criterios de finalización.    |
+| Reutilizar procedimientos especializados   | Skills compatibles con el agente.                          |
+| Mantener servicios disponibles             | VPS, infraestructura serverless o servicios administrados. |
+| Explorar una idea de software              | Programación conversacional y validación del prototipo.    |
+| Integrar herramientas en scripts           | Una CLI o API adecuada al proceso.                         |
+
+## Conclusión
+
+Comprender estas tecnologías permite pasar de pedir respuestas a diseñar sistemas.
+
+El **LLM** procesa lenguaje; **RAG** aporta información recuperada; **MCP** conecta capacidades; las **skills** describen procedimientos; el **agente** coordina acciones; y la **infraestructura** sostiene la operación.
+
+Para quienes trabajamos en diseño y desarrollo web, la oportunidad está en conectar esas piezas con una experiencia clara: resolver una necesidad real, mostrar las fuentes y permitir que las personas comprendan qué puede hacer el sistema.
+
+La tecnología puede acelerar el trabajo. El criterio sigue siendo lo que convierte ese movimiento en una dirección.
+
+---
